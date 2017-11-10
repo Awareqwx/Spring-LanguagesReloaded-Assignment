@@ -37,7 +37,7 @@ public class LanguageController
         if (result.hasErrors())
         {
             model.addAttribute("languages", languageService.allLanguages());
-            return "id.jsp";
+            return "index.jsp";
         } else
         {
             languageService.add(l);
